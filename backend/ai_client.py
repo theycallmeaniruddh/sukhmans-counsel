@@ -6,8 +6,9 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
+import os
 
-API_KEY = os.environ.get("GEMINI_API_KEY", "AQ.Ab8RN6KXty5xOUJjlD7XycuQd_3gi6wNQxH-WuWbyg5VfIyYuw")
+api_key = os.getenv("GEMINI_API_KEY")
 
 # Primary working model for Google GenAI SDK in this environment
 PRIMARY_MODEL = "gemini-3.5-flash-lite"
